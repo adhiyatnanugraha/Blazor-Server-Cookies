@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Blazor-With-Cookies")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83e79b419a3e06adfaabc9a87ae06622e6a01172")]
 [assembly: System.Reflection.AssemblyProductAttribute("Blazor-With-Cookies")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Blazor-With-Cookies")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
