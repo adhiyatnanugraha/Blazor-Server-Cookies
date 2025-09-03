@@ -1,0 +1,32 @@
+﻿<CascadingAuthenticationState>
+<Router AppAssembly="@typeof(App).Assembly">
+    <Found Context="routeData">
+        <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" >
+            <NotAuthorized>
+                <h1>Welcome</h1>
+                <h3>this is public access Blazor page</h3>
+                <h3>you need to login
+                    <ul>
+                        <li>
+                            Username : admin
+                        </li>
+                        <li>
+                            password : password123
+                        </li>
+                    </ul>
+                </h3>
+            </NotAuthorized>
+            <Authorizing>
+                @* <FocusOnNavigate RouteData="@routeData" Selector="h1" /> *@
+                <p>⏳ Checking authorization...</p>
+            </Authorizing>
+        </AuthorizeRouteView>
+    </Found>
+    <NotFound>
+        <PageTitle>Not found</PageTitle>
+        <LayoutView Layout="@typeof(MainLayout)">
+            <p role="alert">Sorry, there's nothing at this address.</p>
+        </LayoutView>
+    </NotFound>
+</Router>
+</CascadingAuthenticationState>
